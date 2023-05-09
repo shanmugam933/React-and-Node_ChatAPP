@@ -6,6 +6,20 @@ const app = express();
 app.use(express.json());
 app.use(cors({ origin: true }));
 
+const Pusher = require("pusher");
+
+const pusher = new Pusher({
+  appId: "1597362",
+  key: "f1bd761d44e816cb55ba",
+  secret: "ce09f71b535810a920c3",
+  cluster: "ap2",
+  useTLS: true
+});
+
+pusher.trigger("my-channel", "my-event", {
+  message: "ffff"
+});
+
 app.post("/authenticate", async (req, res) => {
   const { username } = req.body;
 
@@ -22,4 +36,4 @@ app.post("/authenticate", async (req, res) => {
   return res.json({ username: username, secret: "sha256..." });
 });
 // 
-app.listen(3001);
+app.listen(3005, "192.168.39.31");

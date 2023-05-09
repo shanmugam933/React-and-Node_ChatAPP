@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
 body {
   background-image: url('./assets/valley.jpeg');
   background-repeat: no-repeat;
@@ -5,11 +8,13 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .auth-input, .auth-button {
-  font-family: 'Avenir';
+  font-family: 'Poppins', sans-serif;
 }
+
 .auth-input:hover {
   background-color: #4d4f5c;
 }
@@ -35,7 +40,7 @@ body {
 
 .form-title { 
   font-size: 42px; 
-  font-family: 'Avenir'; 
+  font-family: 'Poppins', sans-serif;
   font-weight: 800; 
   letter-spacing: 0.5px; 
   color: #e8e8e8; 
@@ -44,7 +49,7 @@ body {
 
 .form-subtitle {
   font-size: 18px;
-  font-family: 'Avenir';
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 0.5px;
   color: #afafaf;
   padding-bottom: 24px;
@@ -62,13 +67,13 @@ body {
   left: 18px;
   font-size: 11px;
   color: rgb(175, 175, 175);
-  font-family: Avenir;
+  font-family: 'Poppins', sans-serif;
   width: 100px;
 }
 .auth-input {
   background-color: #3e404b;
   color: white;
-  font-family: "Avenir";
+  font-family: 'Poppins', sans-serif;
   outline: none;
   border: none;
   border-radius: 8px;
@@ -76,9 +81,11 @@ body {
   width: calc(100% - 18px - 18px);
   margin-bottom: 12px;
 }
+
 .auth-input:focus {
   border: 2px solid #fa541c;
 }
+
 .auth-button {
   width: 100%;
   height: 53px;
@@ -87,7 +94,7 @@ body {
   border: none;
   outline: none;
   border-radius: 8px;
-  font-family: "Avenir";
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   transition: all .44s ease;
   -webkit-transition: all .44s ease;
@@ -95,7 +102,9 @@ body {
   font-size: 20px;
   font-weight: 600;
 }
-.auth-button:hover { filter: brightness(145%); }
+.auth-button:hover { 
+  filter: brightness(145%);
+ }
 
 .chat-wrapper {
   height: 80vh; 
